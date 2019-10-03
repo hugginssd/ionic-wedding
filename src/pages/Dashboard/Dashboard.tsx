@@ -15,7 +15,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem
        <IonContent className="ion-padding"fullscreen>
            <IonCard>
                  <IonCardHeader>
-                   <IonCardSubtitle>Sign Up</IonCardSubtitle>
+                   <IonCardSubtitle>Dashboard</IonCardSubtitle>
                  </IonCardHeader>
                        <IonCardContent>
                           <IonItem>
