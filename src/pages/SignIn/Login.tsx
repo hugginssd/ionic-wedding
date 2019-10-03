@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonButton } from '@ionic/react';
 import React from 'react';
 
 const Login: React.FC = () => {
@@ -22,7 +22,7 @@ const Login: React.FC = () => {
          <IonItem>
            <IonInput placeholder="Password"></IonInput>
          </IonItem>
-
+          <IonButton>Sign In</IonButton>
       </IonContent>
     </IonPage>
   );
