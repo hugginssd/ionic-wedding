@@ -1,9 +1,17 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem,
+import { IonLoading, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem,
    IonButton,  IonCard, IonCardHeader, IonCardSubtitle,  IonCardContent, IonLabel } from '@ionic/react';
-import React from 'react';
+import React , { useState } from 'react';
 
 
 const Login: React.FC = () => {
+
+  const [showLoading, setShowLoading] = useState(true);
+
+  setTimeout(() => {
+    setShowLoading(false);
+  }, 2000);
+
+
 
   return (
     <IonPage>
@@ -14,7 +22,6 @@ const Login: React.FC = () => {
       </IonHeader>
       <IonContent className="ion-padding" fullscreen>
           <IonCard>
-              
                 <IonCardHeader>
                   <IonCardSubtitle>Sign In</IonCardSubtitle>
                 </IonCardHeader>
@@ -28,10 +35,15 @@ const Login: React.FC = () => {
                         <IonInput color="light" placeholder="Password"></IonInput>
                       </IonItem>
 
-                      <IonButton expand="block">Sign In</IonButton>
+                      <IonButton expand="block"  onClick={() => setShowLoading(true)}>Sign In</IonButton>
+                      <IonLoading
+                          isOpen={showLoading}
+                          onDidDismiss={() => setShowLoading(false)}
+                          message={'Loading...'}
+                          duration={5000}
+                      />
                       <IonLabel color="primary">Forgot password?</IonLabel>
                       </IonCardContent>
-
           </IonCard>
       </IonContent>
     </IonPage>
