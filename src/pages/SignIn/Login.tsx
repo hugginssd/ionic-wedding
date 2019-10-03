@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem,
-   IonButton,  IonCard, IonCardHeader, IonCardSubtitle,  IonCardContent } from '@ionic/react';
+   IonButton,  IonCard, IonCardHeader, IonCardSubtitle,  IonCardContent, IonLabel } from '@ionic/react';
 import React from 'react';
 
 
@@ -12,25 +12,25 @@ const Login: React.FC = () => {
           <IonTitle>Wedding planner</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">
+      <IonContent className="ion-padding" fullscreen>
           <IonCard>
               
                 <IonCardHeader>
                   <IonCardSubtitle>Sign In</IonCardSubtitle>
                 </IonCardHeader>
 
-                <IonCardContent>
-                <IonItem>
-                  <IonInput placeholder="Username"></IonInput>
-                </IonItem>
+                      <IonCardContent>
+                      <IonItem>
+                        <IonInput color="light" placeholder="Username"></IonInput>
+                      </IonItem>
 
-                <IonItem>
-                  <IonInput placeholder="Password"></IonInput>
-                </IonItem>
+                      <IonItem>
+                        <IonInput color="light" placeholder="Password"></IonInput>
+                      </IonItem>
 
-                <IonButton>Sign In</IonButton>
-
-                </IonCardContent>
+                      <IonButton expand="block">Sign In</IonButton>
+                      <IonLabel color="primary">Forgot password?</IonLabel>
+                      </IonCardContent>
 
           </IonCard>
       </IonContent>
