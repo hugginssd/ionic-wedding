@@ -1,9 +1,6 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel,
-   IonButton, IonItemDivider, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem,
+   IonButton,  IonCard, IonCardHeader, IonCardSubtitle,  IonCardContent } from '@ionic/react';
 import React from 'react';
-import IonIcon from 'ionicons';
-import styles from './style';
-import withStyles from '@material-ui/core/styles/withStyles';
 
 
 const Login: React.FC = () => {
